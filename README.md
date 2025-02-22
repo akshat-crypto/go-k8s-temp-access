@@ -14,6 +14,7 @@ A CLI tool to create temporary Kubernetes access for dashboard login or auditing
 
 ## Project Structure
 
+```bash
 golang-k8s-temp-access/
 ├── cmd/
 │   └── root.go           # Cobra CLI root and create command
@@ -27,7 +28,7 @@ golang-k8s-temp-access/
 ├── main.go               # Entry point
 ├── go.mod                # Go module file
 └── go.sum                # Dependency checksums
-
+```
 
 ## Build Instructions
 1. **Set Up the Repository:**
@@ -53,7 +54,7 @@ golang-k8s-temp-access/
 - Run the create command with your kubeconfig and desired options:
 
 ```bash
-    ./kube-temp-access create --kubeconfig ~/.kube/k8s-local --namespace default,kube-system --resources deployments,pods --expiration 30m
+./kube-temp-access create --kubeconfig ~/.kube/k8s-local --namespace default,kube-system --resources deployments,pods --expiration 30m
 ```
 - Shorthand: 
 
